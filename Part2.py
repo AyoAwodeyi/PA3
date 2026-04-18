@@ -99,7 +99,7 @@ def build_topology():
 
     net.addLink(r1, r2, **CORE)
     net.addLink(r1, r3, **CORE)
-    net.addLink(r2, r4, **CORE)
+    net.addLink(r2, r4, bw=1, delay='20ms')
     net.addLink(r3, r4, **CORE)
 
     net.start()
